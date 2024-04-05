@@ -70,7 +70,7 @@ class _AgregarPrimaVacacionalState extends State<AgregarPrimaVacacional> {
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
-        middle: const Text("Agregar Prima Vacacional"),
+        middle: Text( widget.item == null ? "Agregar Prima Vacacional" : "Editar Prima Vacacional"),
         trailing: CupertinoButton(
           padding: EdgeInsets.zero,
           child: Icon(
